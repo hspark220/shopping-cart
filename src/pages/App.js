@@ -5,9 +5,8 @@ const App = () => {
 
   return (
     <>
-      <h1>This is Homepage</h1>
+      <h1>Homepage</h1>
       <Navigation />
-      <a href="./ShoppingCart">cart</a>
     </>
   )
 }
