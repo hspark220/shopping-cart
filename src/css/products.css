@@ -1,0 +1,14 @@
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.product {
+    width: 400px;
+    height: 400px;
+
+    display: grid;
+    place-items: center;
+    border: black 1px solid;
+}
