@@ -1,11 +1,17 @@
 import React, { useState } from "react";
+import uniqid from "uniqid";
 import Navigation from "../components/Navigation";
+import Product from "../components/Product";
 import "../css/products.css"
 
-const ShoppingCart = () => {
+const ShopPage = () => {
     const [products, setProducts] = useState([
         1,2,3,4,5,6,7,8,9,10
     ])
+
+    const productClick = e => {
+        console.log(e.target.firstChild.innerText);
+    }
 
     return (
         <div className="shopping-page">
@@ -14,9 +20,7 @@ const ShoppingCart = () => {
             <div className="products">
                 {products.map(product => {
                     return (
-                        <div className="product">
-                            <h1>{product}</h1>
-                        </div>
+                        <Product product={product} onClick={productClick} key={uniqid()} />
                     )
                 })}
             </div>
@@ -25,4 +29,4 @@ const ShoppingCart = () => {
     )
 };
 
-export default ShoppingCart;
+export default ShopPage;

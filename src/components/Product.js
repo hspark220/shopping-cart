@@ -1,8 +1,10 @@
-const Product = () => {
+const Product = props => {
+
+
 
     return (
-        <div className="product">
-            <h1>product</h1>
+        <div className="product" onClick={props.onClick}>
+            <h1>{props.product}</h1>
         </div>
     )
 

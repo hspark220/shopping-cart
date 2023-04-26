@@ -1,13 +1,14 @@
 import "../css/navigation.css";
 import {AiOutlineShoppingCart} from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
 
     return (
         <div className="navigation">
             <div id="logo">**logo**</div>
-            <div id="home"><a href="/">Home</a></div>
-            <div id="shop"><a href="/shop">Shop</a></div>
+            <div id="home"><Link to="/">Home</Link></div>
+            <div id="shop"><Link to="/shop">Shop</Link></div>
             <div id="cart"><AiOutlineShoppingCart size={30}/></div>
         </div>
     );
