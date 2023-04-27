@@ -1,7 +1,12 @@
 .products {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    justify-content: start;
+    gap: 30px;
+
+    padding: 50px;
+    margin: auto;
+    width: 1700px;
 }
 
 .product {

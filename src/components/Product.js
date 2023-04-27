@@ -1,11 +1,13 @@
+import { Link } from "react-router-dom";
+
 const Product = props => {
 
 
 
     return (
-        <div className="product" onClick={props.onClick}>
-            <h1>{props.product}</h1>
-        </div>
+        <Link className="product" to={`/shop/${props.product}`}>
+            <h2>{props.product}</h2>
+        </Link>
     )
 
 }

@@ -9,10 +9,6 @@ const ShopPage = () => {
         1,2,3,4,5,6,7,8,9,10
     ])
 
-    const productClick = e => {
-        console.log(e.target.firstChild.innerText);
-    }
-
     return (
         <div className="shopping-page">
             <h1>Shoppage</h1>
@@ -20,7 +16,7 @@ const ShopPage = () => {
             <div className="products">
                 {products.map(product => {
                     return (
-                        <Product product={product} onClick={productClick} key={uniqid()} />
+                        <Product product={product} key={uniqid()} />
                     )
                 })}
             </div>

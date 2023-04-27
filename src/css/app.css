@@ -2,5 +2,9 @@
 
 body {
     font-family: "Source Sans Pro";
-    padding: 50px;
+    margin: 0;
 }
+
+h1 {
+    padding-left: 50px;
+};
