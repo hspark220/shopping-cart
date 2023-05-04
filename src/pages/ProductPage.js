@@ -1,8 +1,12 @@
+import { useParams } from 'react-router-dom';
+
 const ProductPage = props => {
+
+    const { id } = useParams();
 
     return (
         <div className="productPage">
-            <h1>{props}</h1>
+            <h1>{id}</h1>
         </div>
     )
 }
