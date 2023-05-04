@@ -1,13 +1,21 @@
 import { useParams } from 'react-router-dom';
+import Navigation from '../components/Navigation';
 
 const ProductPage = props => {
 
     const { id } = useParams();
 
     return (
-        <div className="productPage">
-            <h1>{id}</h1>
-        </div>
+        <>
+            <Navigation/>
+            <div className="productPage">
+                
+                <div className="product-picture">
+                    <h2>{id}</h2>
+                </div>
+            </div>
+        </>
+        
     )
 }
 
