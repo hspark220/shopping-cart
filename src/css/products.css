@@ -20,14 +20,39 @@
 
 .productPage {
     padding: 2rem;
+    margin: auto;
+    width: 75%;
+    display: grid;
+
+    grid-template: 5rem 1fr 1fr/ 1fr 1fr;
+    grid-template-areas: 
+    "picture title"
+    "picture description"
+    "picture add"
+    ;
+
 }
 
 .product-picture {
+    grid-area: picture;
     width: 500px;
     height: 500px;
     border: solid 1px;
+    margin: auto;
 
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.title {
+    grid-area: title;
+}
+
+.description {
+    grid-area: description;
+}
+
+.add {
+    grid-area: add;
 }
