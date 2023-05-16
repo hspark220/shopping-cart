@@ -55,4 +55,20 @@
 
 .add {
     grid-area: add;
+    place-self: center;
+
+    width: 400px;
+    height: 75px;
+    border-radius: 0;
+    background-color: #475569;
+    border: none;
+
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #f8fafc;
+
+}
+.add:hover {
+    cursor: pointer;   
+    background-color: #fbbf24;
 }
