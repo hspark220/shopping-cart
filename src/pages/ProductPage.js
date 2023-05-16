@@ -5,6 +5,10 @@ const ProductPage = props => {
 
     const { id } = useParams();
 
+    
+
+
+
     return (
         <>
             <Navigation/>
@@ -14,7 +18,7 @@ const ProductPage = props => {
                 <div className="product-picture">
                     <h2>{id}</h2>
                 </div>
-                <button className="add">Add To Cart</button>
+                <button className="add" onClick={props.onClick}>Add To Cart</button>
             </div>
         </>
         
