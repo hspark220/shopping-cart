@@ -10,7 +10,7 @@ const ProductPage = props => {
             <Navigation/>
             <div className="productPage">
                 <h2 className='title'>{id}</h2>
-                <p className="description">Description of  {id}</p>
+                <p className="description">This item number is  {id}</p>
                 <div className="product-picture">
                     <h2>{id}</h2>
                 </div>

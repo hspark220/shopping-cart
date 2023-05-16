@@ -21,16 +21,15 @@
 .productPage {
     padding: 2rem;
     margin: auto;
-    width: 75%;
+    width: 1000px;
     display: grid;
 
-    grid-template: 5rem 1fr 1fr/ 1fr 1fr;
+    grid-template: 6rem 1fr 1fr/ 600px 400px;
     grid-template-areas: 
     "picture title"
     "picture description"
     "picture add"
     ;
-
 }
 
 .product-picture {
@@ -47,10 +46,14 @@
 
 .title {
     grid-area: title;
+    
+    font-size: 3rem;
 }
 
 .description {
     grid-area: description;
+
+    font-size: 1.5rem;
 }
 
 .add {
