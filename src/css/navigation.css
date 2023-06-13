@@ -26,7 +26,10 @@ a {
 #cart {
     justify-self: end;
     padding-right: 50px;
+
+    display: flex;
 }
+
 
 #home, #shop {
     font-size: 1.3rem;

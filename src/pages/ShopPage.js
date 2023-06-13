@@ -10,7 +10,7 @@ const ShopPage = (props) => {
     return (
         <div className="shopping-page">
             <h1>Shoppage</h1>
-            <Navigation />
+            <Navigation cart={props.cart }/>
             <div className="products">
                 {props.products.map(product => {
                     return (

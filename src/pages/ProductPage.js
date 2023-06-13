@@ -1,17 +1,20 @@
 import { useParams } from 'react-router-dom';
 import Navigation from '../components/Navigation';
+import SideCart from '../components/SideCart';
 
 const ProductPage = props => {
 
     const { id } = useParams();
 
-    
+    const sideCart = () => {
+        return <SideCart cart={props.cart}  />
+    }
 
 
 
     return (
         <>
-            <Navigation/>
+            <Navigation cart={props.cart}/>
             <div className="productPage">
                 <h2 className='title'>{id}</h2>
                 <p className="description">This item number is  {id}</p>
@@ -20,7 +23,9 @@ const ProductPage = props => {
                 </div>
                 <button className="add" onClick={() => {
                     props.onClick(id);
+                    console.log(props.cart.length)
                 }}>Add To Cart</button>
+                
             </div>
         </>
         
