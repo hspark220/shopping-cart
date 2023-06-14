@@ -24,10 +24,11 @@
     width: 1000px;
     display: grid;
 
-    grid-template: 6rem 1fr 1fr/ 600px 400px;
+    grid-template: 6rem 1fr 1fr 1fr/ 600px 400px;
     grid-template-areas: 
     "picture title"
     "picture description"
+    "picture price"
     "picture add"
     ;
 }
@@ -54,6 +55,12 @@
     grid-area: description;
 
     font-size: 1.5rem;
+}
+
+.product-price {
+    grid-area: price;
+    align-self: center;
+
 }
 
 .add {

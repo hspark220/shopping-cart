@@ -7,8 +7,8 @@ const Cart = props => {
     
     return (
         <>
-            <Navigation cart={props.cart}/>
             <h1>Cart</h1>
+            <Navigation cart={props.cart}/>
             <ul>
                 {props.cart.map((item, index) => {
                     return <Item item={item} onClick={props.onClick} index={index} key={uniqid()}/>

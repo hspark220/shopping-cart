@@ -10,19 +10,23 @@ const RouteSwitch = () => {
     const products = [
         {
             title: "1",
-            description: "This item is called 1"
+            description: "just the number 1",
+            price: 1
         },
         {
-            title: "q1",
-            description: "This is the name of the keyboard"
+            title: "q2",
+            description: "aluminium cased keyboard",
+            price: 200
         },
         {
-            title: "v1",
-            description: "This is the name of another keyboard"
+            title: "kodak ektar 35",
+            description: "Small 35mm half film camera",
+            price: 50
         },
         {
             title: "Canon AE-1",
-            description: "Sick film camera"
+            description: "35 mm film camera",
+            price: 256
         }
     ];
 

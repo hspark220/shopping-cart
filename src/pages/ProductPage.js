@@ -14,6 +14,9 @@ const ProductPage = props => {
                 <div className="product-picture">
                     <h2>{props.product[id].title}</h2>
                 </div>
+                <div className='product-price'>
+                    <h3>{`Price: $${props.product[id].price}`}</h3>
+                </div>
                 <button className="add" onClick={() => {
                     props.onClick(props.product[id]);
                     console.log(props.cart.length)
