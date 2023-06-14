@@ -7,14 +7,29 @@ import Cart from "./pages/Cart";
 
 const RouteSwitch = () => {
 
-    const [products, setProducts] = useState([
-        1,2,3,4,5,6,7,8,9,10,'q1'
-    ]);
+    const products = [
+        {
+            title: "1",
+            description: "This item is called 1"
+        },
+        {
+            title: "q1",
+            description: "This is the name of the keyboard"
+        },
+        {
+            title: "v1",
+            description: "This is the name of another keyboard"
+        },
+        {
+            title: "Canon AE-1",
+            description: "Sick film camera"
+        }
+    ];
 
     const [cart, setCart] = useState([]);
 
-    const addToCart = id => {
-        setCart(cart.concat(id));
+    const addToCart = item => {
+        setCart(cart.concat(item));
     }
 
     const deleteItem = deleteIndex => {
@@ -28,7 +43,7 @@ const RouteSwitch = () => {
             <Routes>
                 <Route path="/" element={<App cart={cart}/>} />
                 <Route path="/shop" element={<ShopPage products={products} cart={cart}/>} />
-                <Route path={`/shop/:id`} element={<ProductPage onClick={addToCart} cart={cart}/>}/>
+                <Route path={`/shop/:id`} element={<ProductPage onClick={addToCart} cart={cart} product={products}/>}/>
                 <Route path={`/cart`} element={<Cart cart={cart} onClick={deleteItem}/>} />
 
             </Routes>

@@ -12,9 +12,9 @@ const ShopPage = (props) => {
             <h1>Shoppage</h1>
             <Navigation cart={props.cart }/>
             <div className="products">
-                {props.products.map(product => {
+                {props.products.map((product, index) => {
                     return (
-                        <Product product={product} key={uniqid()} />
+                        <Product product={product} key={uniqid()} index={index} />
                     )
                 })}
             </div>

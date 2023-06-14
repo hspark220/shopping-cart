@@ -22,6 +22,10 @@
 
 .item-title {
     grid-area: description;
+    display: flex;
+    align-items: center;
+
+    gap: 0.5rem;
 }
 
 .item-delete {

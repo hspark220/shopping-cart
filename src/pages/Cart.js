@@ -11,7 +11,7 @@ const Cart = props => {
             <h1>Cart</h1>
             <ul>
                 {props.cart.map((item, index) => {
-                    return <Item id={item} onClick={props.onClick} index={index} key={uniqid()}/>
+                    return <Item item={item} onClick={props.onClick} index={index} key={uniqid()}/>
                 })}
             </ul>
         </>

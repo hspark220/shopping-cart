@@ -5,8 +5,8 @@ const Product = props => {
 
 
     return (
-        <Link className="product" to={`/shop/${props.product}`}>
-            <h2>{props.product}</h2>
+        <Link className="product" to={`/shop/${props.index}`}>
+            <h2>{props.product.title}</h2>
         </Link>
     )
 

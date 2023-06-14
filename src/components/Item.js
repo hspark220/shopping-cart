@@ -5,9 +5,13 @@ const Item = props => {
     return (
         <div className="item">
             <div className="item-picture">
-                <h3>{props.id}</h3>
+                <h3>{props.item.title}</h3>
             </div>
-            <h3 className="item-title">{props.id}</h3>
+            <div className="item-title">
+                <h3>{props.item.title + ": "}</h3>
+                <p>{props.item.description}</p>
+            </div>
+            
             <button className="item-delete" onClick={() => {
                 props.onClick(props.index);
             }}><FiTrash size={20}/></button>

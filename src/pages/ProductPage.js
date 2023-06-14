@@ -9,13 +9,13 @@ const ProductPage = props => {
         <>
             <Navigation cart={props.cart}/>
             <div className="productPage">
-                <h2 className='title'>{id}</h2>
-                <p className="description">This item number is  {id}</p>
+                <h2 className='title'>{props.product[id].title}</h2>
+                <p className="description">{props.product[id].description}</p>
                 <div className="product-picture">
-                    <h2>{id}</h2>
+                    <h2>{props.product[id].title}</h2>
                 </div>
                 <button className="add" onClick={() => {
-                    props.onClick(id);
+                    props.onClick(props.product[id]);
                     console.log(props.cart.length)
                 }}>Add To Cart</button>
                 
@@ -24,5 +24,6 @@ const ProductPage = props => {
         
     )
 }
+
 
 export default ProductPage;
