@@ -1,16 +1,9 @@
 import { useParams } from 'react-router-dom';
 import Navigation from '../components/Navigation';
-import SideCart from '../components/SideCart';
 
 const ProductPage = props => {
 
     const { id } = useParams();
-
-    const sideCart = () => {
-        return <SideCart cart={props.cart}  />
-    }
-
-
 
     return (
         <>

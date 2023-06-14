@@ -1,0 +1,35 @@
+.item {
+    display: grid;
+    grid-template-columns: 50px 1fr 40px;
+    grid-template-areas: "picture description button";
+    align-items: center;
+    gap: 1rem;
+
+    height: 60px;
+    width: 500px;
+}
+
+.item-picture {
+    grid-area: picture;
+    height: 50px;
+    width: 50px;
+    border: solid 1px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-title {
+    grid-area: description;
+}
+
+.item-delete {
+    grid-area: button;
+    height: 40px;
+    display: flex;
+
+
+    justify-content: center;
+    align-items: center;
+}
