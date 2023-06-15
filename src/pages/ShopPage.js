@@ -1,4 +1,3 @@
-
 import uniqid from "uniqid";
 import Navigation from "../components/Navigation";
 import Product from "../components/Product";
